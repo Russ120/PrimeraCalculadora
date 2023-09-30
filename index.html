@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleGpt.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="appcalcu">
+        <form name="calculadora">
+            <input type="textfield" name="preg" value="" autocomplete="off" readonly>
+
+            <input type="reset"  value="C">
+            <input type="button" value="←" onclick="borrar()">
+            <input type="button" value="÷" onclick="digito('/')" class="naranja">
+            <br>
+            <input type="button" value="7" onclick="digito('7')" class="gris">
+            <input type="button" value="8" onclick="digito('8')" class="gris">
+            <input type="button" value="9" onclick="digito('9')" class="gris">
+            <input type="button" value="x" onclick="digito('*')" class="naranja">
+            <br>
+            <input type="button" value="4" onclick="digito('4')" class="gris">
+            <input type="button" value="5" onclick="digito('5')" class="gris">
+            <input type="button" value="6" onclick="digito('6')" class="gris">
+            <input type="button" value="-" onclick="digito('-')" class="naranja">
+            <br>
+            <input type="button" value="1" onclick="digito('1')" class="gris">
+            <input type="button" value="2" onclick="digito('2')" class="gris">
+            <input type="button" value="3" onclick="digito('3')" class="gris">
+            <input type="button" value="+" onclick="digito('+')" class="naranja">
+            <br>
+            <input type="button" value="0" onclick="digito('0')" class="gris">
+            <input type="button" value="." onclick="digito('.')" class="gris">
+            <input type="button" value="=" onclick="calcular()">
+
+        </form>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
