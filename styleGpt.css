@@ -1,83 +1,69 @@
 body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(177,191,28,1) 100%);
-    padding-top: 3%;
-    
-  }
-  
-  .appcalcu {
-    width: 300px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    background-color: #5e5c59;
-  }
-  
-  input[type="textfield"] {
-    height: 90px;
-    width: 100%;
-    font-size: 40px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    text-align: right;
-    width: 90%;
-    padding: 15px;
-    cursor: default;
-    border: 0;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(177,191,28,1) 100%);
+}
 
-  }
-  
-  input[type="button"],input[type="reset"] {
-    width: 60px;
-    height: 50px;
-    font-size: 18px;
-    margin: 5px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    background-color: #9eb952;
-    color:#fff
-    
-  }
-  
-  input[type="reset"],
-  input[type="button"][value="←"],
-  input[type="button"][value="="] {
-    width: 97px;
-    background-color: #adafaf;
-  }
-  
-  input[type="button"][value="C"],
-  input[type="button"][value="0"] {
-    width: 97px;
-    background-color: #adafaf;
-  }
-  
-  input[type="button"][value="C"] {
-    background-color: #ff8080;
-    color: #fff;
-  }
-  
-  input[type="button"][value="+"],
-  input[type="button"][value="-"],
-  input[type="button"][value="x"],
-  input[type="button"][value="÷"] {
-    background-color: #ffcc66;
-    color: #fff;
-  }
-  
-  input[type="button"]:hover {
-    background-color: #d6d6d6;
-  }
+.appcalcu {
+  width: 300px;
+  background-color: #5e5c59;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
-  input[type="reset"]:hover{
-    background-color: #d6d6d6;
-  }
-  
+input[type="textfield"] {
+  height: 90px;
+  width: 91%;
+  font-size: 40px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  text-align: right;
+  padding: 15px;
+  border: 0;
+  outline: none;
+  cursor: default;
+}
+
+input[type="button"], input[type="reset"] {
+  width: 60px;
+  height: 50px;
+  font-size: 18px;
+  margin: 5px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #9eb952;
+  color: #fff;
+}
+
+input[type="reset"],
+input[type="button"][value="←"],
+input[type="button"][value="="],
+input[type="button"][value="C"],
+input[type="button"][value="0"] {
+  width: 97px;
+  background-color: #adafaf;
+}
+
+input[type="button"][value="C"] {
+  background-color: #ff8080;
+}
+
+input[type="button"][value="+"],
+input[type="button"][value="-"],
+input[type="button"][value="x"],
+input[type="button"][value="÷"] {
+  background-color: #ffcc66;
+}
+
+input[type="button"]:hover,
+input[type="reset"]:hover {
+  background-color: #d6d6d6;
+}
